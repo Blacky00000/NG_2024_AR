@@ -33,7 +33,7 @@ int main()
         x2 = (-b - sqrt(D)) / (2*a);
         cout << "Since D is greater than 0, the equation has two roots: \nx1 = " << x1 << ", x2 = " << x2 << endl;
     } else {
-        cout << "Since D is less than zero, the equation has no solutions. BUT – ";
+        cout << "Since D is less than zero, the equation has no solutions. BUT - ";
         cout << "\nYou can do it with the complex(imaginary) roots."  << endl;
         cout << "x1 = " << -b/(2*a) << " + " << sqrt(-D)/(2*a) << "i" << endl;
         cout << "x2 = " << -b/(2*a) << " - " << sqrt(-D)/(2*a) << "i" << endl;

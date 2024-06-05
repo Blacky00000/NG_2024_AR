@@ -37,6 +37,7 @@ Makefile*
 *build-*
 *.qm
 *.prl
+*.pro
 
 
 # Qt unit tests

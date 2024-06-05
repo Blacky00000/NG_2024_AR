@@ -8,12 +8,12 @@ int main() {
     int size;
     cout << "Enter size: ";
     cin >> size;
+
     for (int row = 0; row < size; row++) {
         for (int backspace = 0; backspace < size - row; backspace++) {
             cout << " ";
         }
-        cout << "*";
-        for (int index = 0; index < row * 2; index++) {
+        for (int index = 0; index <= row * 2; index++) {
             cout << "*";
         }
         cout << endl;
