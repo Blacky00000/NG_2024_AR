@@ -10,8 +10,11 @@
 *.dll
 *.dylib
 
-/build
-/.qtc_clangd
+*/build
+*/.qtc_clangd
+*.idx
+*/.qmake.cache
+*/.qmake.stash
 
 # Qt-es
 object_script.*.Release
