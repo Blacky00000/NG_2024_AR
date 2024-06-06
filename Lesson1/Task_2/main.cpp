@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int num1= 0;
+    int num1 = 0;
     int num2 = 0;
-    cout << "Write a num1 : ";
+    cout << "Write the first number : ";
     cin >> num1;
 
     /* if(cin.fail())
@@ -16,7 +16,7 @@ int main()
         return 1;
     }*/
 
-    cout << "Write a num2 : ";
+    cout << "Write the second number : ";
     cin >> num2;
 
     cout << num1 << "+" << num2 << "=" << num1 + num2 << endl;
