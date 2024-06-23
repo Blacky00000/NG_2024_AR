@@ -11,6 +11,7 @@
 *.dylib
 
 */build
+*build
 */.qtc_clangd
 *.idx
 */.qmake.cache

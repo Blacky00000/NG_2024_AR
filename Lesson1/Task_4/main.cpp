@@ -40,13 +40,13 @@ int main()
 
         switch (operation){
         case '+':
-            cout << num1 << "+" << num2 << "=" << num1 + num2;
+            cout << num1 << "+" << num2 << "=" << num1 + num2<< endl;
             break;
         case '-':
-            cout << num1 << "-" << num2 << "=" << num1 - num2;
+            cout << num1 << "-" << num2 << "=" << num1 - num2<< endl;
             break;
         case '*':
-            cout << num1 << "*" << num2 << "=" << num1 * num2;
+            cout << num1 << "*" << num2 << "=" << num1 * num2<< endl;
             break;
         case '/':
             if (num2!= 0)
@@ -56,6 +56,6 @@ int main()
             break;
         }
     }
-
+    system("pause");
     return 0;
 }
