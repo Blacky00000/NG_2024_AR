@@ -2,32 +2,34 @@
 
 using namespace std;
 
+int responser(string response) {
+    cout << response << "\n";
+    cout << "But you are doing great!";
+    return 0;
+}
+
 int main() {
     int salary;
     cout << "How much do you earn? ";
     cin >> salary;
 
-    /*
-    if(salary < 1000) {
-        cout << "Work harder ";
+    if (salary < 1000) {
+        return responser("Work harder");
     }
 
-    if (salary > 1000){
-        if (salary > 1000000){
-            cout << "Wow, you are a millionaire ";
-        }
-        if (salary < 1000000){
-            cout << "Good job ";
-        }
-    } */
+    if (salary > 1000000) {
+        return responser("Wow, you are a millionaire!");
+    }
 
-    bool isMillionaire = !(salary < 1000000);
+    if (salary > 1000) {
+        return responser("Good job!");
+    }
+
+    return responser("It`s okay!");
+
+    /*bool isMillionaire = !(salary < 1000000);
     bool isPoor = (salary < 1000);
     bool isRich = (salary > 1000);
-
-    //cout<< "Millionaire: " << isMillionaire << endl;
-    //cout<< "Rich: " << isRich << endl;
-    //cout<< "Poor: " << isPoor << endl;
 
     if(isPoor){
         cout << "Work harder ";
@@ -43,6 +45,7 @@ int main() {
         cout << "Wow, you are a millionaire ";
     }
 
+
     if(!isMillionaire){
         if(!isRich){
             if(!isPoor){
@@ -51,8 +54,7 @@ int main() {
         }
     }
 
-
     cout << ", but you are doing great!" << endl;
 
-    return 0;
+    return 0;*/
 }
