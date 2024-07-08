@@ -6,7 +6,7 @@ int main() {
     int value = 0;
     int max_value = 0;
 
-    for (int i = 0; i < 20; ++i) {
+    for (int amount = 0; amount < 20; ++amount) {
         cout << "Enter value: ";
         cin >> value;
 
@@ -18,7 +18,7 @@ int main() {
             max_value = value;
         }
 
-        values[i] = value;
+        values[amount] = value;
     }
 
     for (int val : values) {
@@ -26,11 +26,11 @@ int main() {
             break;
         }
 
-        for (int i = 0; i < (max_value - val) / 2; ++i) {
+        for (int amount = 0; amount < (max_value - val) / 2; ++amount) {
             cout << " ";
         }
 
-        for (int i = 0; i < val; ++i) {
+        for (int amount = 0; amount < val; ++amount) {
             cout << "*";
         }
 

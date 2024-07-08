@@ -6,21 +6,30 @@ int main() {
     int value = 0;
     int max_value = 0;
 
-    for (int i = 0; i < 5; ++i) {
+    for(int amount = 0; amount < 5; ++amount) {
         cout << "Enter value: ";
         cin >> value;
-
-        if (value == 0){
-            break;
-        }
 
         if (value > max_value){
             max_value = value;
         }
 
-        values[i] = value;
+        values[amount] = value;
     }
 
+    for(int amount = 0; amount < max_value; ++amount) {
+
+        for(int amount = 0; amount < 5; ++amount) {
+            if(values[amount] <= 0){
+                cout << " ";
+            } else {
+                cout << "*";
+                values[amount] -= 1;
+            }
+        }
+
+        cout << endl;
+    }
 
     return 0;
 }
